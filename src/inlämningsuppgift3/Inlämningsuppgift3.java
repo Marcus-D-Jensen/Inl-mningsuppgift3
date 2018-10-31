@@ -34,6 +34,9 @@ public class Inlämningsuppgift3 extends Application{
         
         Scene scene = new Scene(layout);
         primaryStage.setScene(scene);
+        
+        scene.getStylesheets().add(Inlämningsuppgift3.class.getResource("myStyle.css").toExternalForm());
+        
         primaryStage.show();
         
     }
