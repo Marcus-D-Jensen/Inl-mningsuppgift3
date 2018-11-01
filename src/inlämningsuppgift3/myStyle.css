@@ -13,4 +13,5 @@
 
 #emptySquare {
     -fx-background-color:#666666;
+    -fx-text-fill: transparent;
 }
