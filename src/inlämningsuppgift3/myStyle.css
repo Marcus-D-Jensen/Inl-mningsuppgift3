@@ -1,5 +1,4 @@
 .root {
-    -fx-setfillwidth:false;
     -fx-background-color:#666666;
     -fx-hgap:5;
     -fx-vgap:5;
@@ -12,5 +11,6 @@
 }
 
 #emptySquare {
-    -fx-background-color:#666666;
+    -fx-background-color: transparent;
+    -fx-text-fill:transparent;
 }
