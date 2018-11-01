@@ -1,4 +1,5 @@
 .root {
+    -fx-setfillwidth:false;
     -fx-background-color:#666666;
     -fx-hgap:5;
     -fx-vgap:5;
@@ -8,4 +9,8 @@
 .button {
     -fx-min-width: 100px;
     -fx-min-height: 100px;
+}
+
+#emptySquare {
+    -fx-background-color:#666666;
 }
