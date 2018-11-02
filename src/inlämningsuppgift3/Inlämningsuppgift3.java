@@ -95,7 +95,7 @@ public class Inlämningsuppgift3 extends Application {
             }
             
             GenerateBoard.updateBoard(board, buttons);
-           
+
             if (checkIfSolved.solved(buttons, empty)) {
                 if (WinAlert.victory()) {
                     GenerateBoard.generate(board, buttons);

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import javafx.scene.control.Button;
 
 public class CheckIfSolved {
-
-    private Button buttonEmpty = new Button("");
+    
     private ArrayList<Button> tempButtons = new ArrayList();
     
     public boolean solved(ArrayList<Button> buttons, Button empty) {
+        
         
         tempButtons.clear();
         
