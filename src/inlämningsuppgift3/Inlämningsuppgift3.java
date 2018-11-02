@@ -14,9 +14,6 @@ import javafx.stage.Stage;
 
 public class Inlämningsuppgift3 extends Application {
     
-    TileClicked tileClicked = new TileClicked();
-    CheckIfSolved checkIfSolved = new CheckIfSolved();
-    
     Stage window;
     Scene scene, victoryScene;
     
@@ -28,6 +25,9 @@ public class Inlämningsuppgift3 extends Application {
     Button restart, quit;
     
     ArrayList<Button> buttons = new ArrayList();
+    
+    TileClicked tileClicked = new TileClicked();
+    CheckIfSolved checkIfSolved = new CheckIfSolved();
     
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -78,11 +78,6 @@ public class Inlämningsuppgift3 extends Application {
         window.show();
     }
     
-    public static void main(String[] args) {
-        launch(args);
-    }
-
-    
     public class TileClicked implements EventHandler<ActionEvent> {
 
         @Override
@@ -108,5 +103,11 @@ public class Inlämningsuppgift3 extends Application {
                 } else { System.exit(0); }    
             }
         }
+    }
+    
+    
+    
+    public static void main(String[] args) {
+        launch(args);
     }
 }

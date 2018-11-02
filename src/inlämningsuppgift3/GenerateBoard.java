@@ -7,8 +7,6 @@ import javafx.scene.layout.GridPane;
 
 public class GenerateBoard {
     
-
-    
     public static void generate(GridPane board,  ArrayList<Button> buttons) {
         
         board.getChildren().clear();
