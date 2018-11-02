@@ -37,10 +37,8 @@ public class Inlämningsuppgift3 extends Application {
         window = primaryStage;
         window.setTitle("Sliding Puzzle!");
         
-        restart = new Button("Restart");
-        restart.setId("meny");
-        quit = new Button("Quit");
-        quit.setId("meny");
+        restart = new Button("Restart");  restart.setId("meny");
+        quit = new Button("Quit");        quit.setId("meny");
         
         menu.getChildren().add(restart);
         menu.getChildren().add(quit);
@@ -90,7 +88,9 @@ public class Inlämningsuppgift3 extends Application {
             
             int emptyButtonPosition = buttons.indexOf(empty);
             
-            if ((emptyButtonPosition == top) || (emptyButtonPosition == bottom) || (emptyButtonPosition == left) || (emptyButtonPosition == right)) {
+            if ((emptyButtonPosition == top) || (emptyButtonPosition == bottom) 
+                    || (emptyButtonPosition == left) || (emptyButtonPosition == right)) {
+                
                 Collections.swap(buttons, clickedButtonPosition, buttons.indexOf(empty));
             }
             
@@ -104,7 +104,6 @@ public class Inlämningsuppgift3 extends Application {
             }
         }
     }
-    
     
     
     public static void main(String[] args) {

@@ -8,8 +8,6 @@ public class CheckIfSolved {
     private ArrayList<Button> tempButtons = new ArrayList();
     
     public boolean solved(ArrayList<Button> buttons, Button empty) {
-        
-        
         tempButtons.clear();
         
         for (Button button : buttons) {
@@ -17,9 +15,9 @@ public class CheckIfSolved {
         }
         
         tempButtons.remove(empty);
+        
         int i = 1;
         for (Button button : tempButtons) {
-            
             if (!button.getText().equals(String.valueOf(i))) {
                 return false; 
             }
